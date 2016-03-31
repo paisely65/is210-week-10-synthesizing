@@ -14,7 +14,8 @@ def sum_orders(customers, orders):
         dictionary: A dictionary that combines customers and orders
 
     Examples:
-        >>>CUSTOMERS = 1: {'name': 'Ekaterin Vorsoisson', 'email': 'evorsoisson@komarr.net'},
+        >>>CUSTOMERS = 1: {'name': 'Ekaterin Vorsoisson',
+        'email': 'evorsoisson@komarr.net'},
         2: {'name': 'Cordelia Naismith', 'email': 'cordelia@beta.com'},
         3: {'name': 'Ivan Vorpatril', 'email': 'iv398@barrayar.net'},
 
@@ -42,7 +43,7 @@ def sum_orders(customers, orders):
                 total_orders += request['total']
                 num_orders += 1
                 customer_database = {'name': value['name'],
-                                     'email':value['email'],
+                                     'email': value['email'],
                                      'orders': num_orders,
-                                     'total':total_orders}
+                                     'total': total_orders}
     return customer_database
