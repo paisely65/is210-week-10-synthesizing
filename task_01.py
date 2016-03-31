@@ -26,5 +26,4 @@ def sum_orders(customers, orders):
 	                 33: {'name': 'Cathy' 'email': 'Cathy@gmail.com'},
 
     """
-    sum_orders(customers, orders)
-    return sum_orders
+
