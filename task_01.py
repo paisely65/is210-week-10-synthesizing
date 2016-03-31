@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """A small docstring that summarizes customer orders."""
 
-import data
 
 def sum_orders(customers, orders):
     """This formula finds the sum of customers orders.
@@ -38,7 +37,7 @@ def sum_orders(customers, orders):
                 total_orders += request['total']
                 num_orders += 1
                 customer_database[key] = {'name': value['name'],
-                                     'email': value['email'],
-                                     'orders': num_orders,
-                                     'total': total_orders}
+                                          'email': value['email'],
+                                          'orders': num_orders,
+                                          'total': total_orders}
     return customer_database
