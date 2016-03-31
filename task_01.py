@@ -6,6 +6,9 @@
 import data
 print data
 def sum_orders(customers, orders):
+
+
+
     """This formula finds the sum of customers orders.
 
     Args:
@@ -16,13 +19,12 @@ def sum_orders(customers, orders):
         dictionary: A nested dictionary
 
     Examples:
-         >>>ODRERS = {1: {'customer_id': 11, 'total': 110},
-	              3: {'customer_id': 33, 'total': 330},
-	              5: {'customer_id': 55, 'total': 550}}
-        >>> CUSTOMERS = {11: {'name': 'Alice', 'email': 'alice@gmail.com'},
+        >>>orders = {1: {'customer_id': 11, 'total': 110},
+                     3: {'customer_id': 33, 'total': 330},
+                     5: {'customer_id': 55, 'total': 550}}
+        >>> customers = {11: {'name': 'Alice', 'email': 'alice@gmail.com'},
 	                 33: {'name': 'Cathy' 'email': 'Cathy@gmail.com'},
 
     """
-    sum_orders(customers=CUSTOMERS, orders=ORDERS)
-    return 'sum_orders'
-
+    sum_orders(customers, orders)
+    return sum_orders
